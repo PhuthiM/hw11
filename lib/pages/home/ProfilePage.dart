@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 class ProfilePage extends StatelessWidget {
@@ -11,20 +10,24 @@ class ProfilePage extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           ClipRRect(
-            borderRadius: BorderRadius.circular(500.0),
+            borderRadius: BorderRadius.circular(100.0),
             child: Container(
               width: 200.0,
               height: 200.0,
-              child: Image.asset('assets/images/profile.jpg'),
+              child: Image.asset('assets/images/profile1.jpg'),
             ),
           ),
+          SizedBox(height: 10.0),
           Text(
             'Phuthita Sookhong',
             style: Theme.of(context).textTheme.headline1,
           ),
           Text(
             'sookhong_p@silpakorn.edu',
-            style: Theme.of(context).textTheme.bodyText2,
+            style: TextStyle(
+                fontSize: 15.0,
+                color: Colors.black54,
+                fontWeight: FontWeight.bold),
           ),
         ],
       ),

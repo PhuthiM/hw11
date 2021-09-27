@@ -21,7 +21,13 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Food'),
+        title: Text(
+          'Food',
+          style: TextStyle(
+              fontSize: 20.0,
+              color: Colors.black,
+              fontWeight: FontWeight.bold),
+        ),
       ),
       drawer: Drawer(
         child: ListView(
@@ -29,7 +35,16 @@ class _HomePageState extends State<HomePage> {
           children: [
             DrawerHeader(
               decoration: BoxDecoration(
-                color: Colors.blue.shade200,
+                gradient: LinearGradient(
+                  // ไล่เฉดจากมุมบนซ้ายไปมุมล่างขวาของ Container
+                  begin: Alignment.topLeft,
+                  end: Alignment.bottomRight,
+                  // ไล่เฉดจากสีแดงไปสีน้ำเงิน
+                  colors: [
+                    Colors.amberAccent,
+                    Colors.amber.shade800,
+                  ],
+                ),
               ),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -42,13 +57,20 @@ class _HomePageState extends State<HomePage> {
                       child: Image.asset('assets/images/profile1.jpg'),
                     ),
                   ),
+                  SizedBox(height: 10.0),
                   Text(
                     'Phuthita Sookhong',
-                    style: TextStyle(fontSize: 20.0, color: Colors.white),
+                    style: TextStyle(
+                        fontSize: 20.0,
+                        color: Colors.black54,
+                        fontWeight: FontWeight.bold),
                   ),
                   Text(
                     'sookhong_p@silpakorn.edu',
-                    style: TextStyle(fontSize: 15.0, color: Colors.white),
+                    style: TextStyle(
+                        fontSize: 15.0,
+                        color: Colors.black54,
+                        fontWeight: FontWeight.bold),
                   ),
                 ],
               ),
@@ -58,7 +80,7 @@ class _HomePageState extends State<HomePage> {
                   num == 0
                       ? Icon(
                           Icons.fastfood,
-                          color: Colors.blue,
+                          color: Colors.amber.shade800,
                         )
                       : Icon(Icons.fastfood),
                   'Food',
@@ -69,7 +91,10 @@ class _HomePageState extends State<HomePage> {
             ListTile(
               title: _buildDrawerItem(
                   num == 1
-                      ? Icon(Icons.person, color: Colors.blue)
+                      ? Icon(
+                          Icons.person,
+                          color: Colors.amber.shade800,
+                        )
                       : Icon(Icons.person),
                   'Profile',
                   1),
