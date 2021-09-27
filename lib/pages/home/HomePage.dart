@@ -24,9 +24,7 @@ class _HomePageState extends State<HomePage> {
         title: Text(
           'Food',
           style: TextStyle(
-              fontSize: 20.0,
-              color: Colors.black,
-              fontWeight: FontWeight.bold),
+              fontSize: 20.0, color: Colors.black, fontWeight: FontWeight.bold),
         ),
       ),
       drawer: Drawer(
