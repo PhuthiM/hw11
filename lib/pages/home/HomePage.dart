@@ -21,11 +21,21 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
-          'Food',
-          style: TextStyle(
-              fontSize: 20.0, color: Colors.black, fontWeight: FontWeight.bold),
-        ),
+        title: _subPageIndex == 0
+            ? Text(
+                'Food',
+                style: TextStyle(
+                    fontSize: 20.0,
+                    color: Colors.black,
+                    fontWeight: FontWeight.bold),
+              )
+            : Text(
+                'Profile',
+                style: TextStyle(
+                    fontSize: 20.0,
+                    color: Colors.black,
+                    fontWeight: FontWeight.bold),
+              ),
       ),
       drawer: Drawer(
         child: ListView(

@@ -131,7 +131,6 @@ class _LoginPageState extends State<LoginPage> {
   }
 
   void _handleClickButton(int num) {
-    print('You pressed $num');
 
     setState(() {
       if (num == -1) {
