@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:hw11/pages/home/FoodListPage.dart';
-import 'package:hw11/pages/home/OrderPage.dart';
 
+import 'FoodListPage.dart';
+import 'OrderPage.dart';
 class FoodPage extends StatefulWidget {
   const FoodPage({Key? key}) : super(key: key);
 

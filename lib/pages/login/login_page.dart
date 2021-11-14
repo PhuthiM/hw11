@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:hw11/pages/home/HomePage.dart';
+
+import '../home/HomePage.dart';
 
 class LoginPage extends StatefulWidget {
   static var routeName = '/login';

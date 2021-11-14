@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:hw11/pages/home/ProfilePage.dart';
 
 import 'FoodPage.dart';
+import 'ProfilePage.dart';
 
 class HomePage extends StatefulWidget {
   static const routeName = '/home';
